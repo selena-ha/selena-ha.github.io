@@ -1,0 +1,302 @@
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: #F8CF9F;
+  padding: 3vh 4.5vw 0vh 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 600;
+  color:black;
+  word-spacing: 2px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  font-family: ' Lato', sans-serif;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2vh;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+  padding: 0 1.5vw;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+#navbar-burger {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8CF9F;
+  padding: 3vh 3vw;
+}
+
+#burger-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 0;
+  font-family: ' Lato', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  right: 0vw;
+  width: 86vw;
+  background-color: rgb(249, 249, 249);
+  padding: 4vh 9vw;
+}
+
+.fa {
+  border-style: none;
+  background-color: #F8CF9F;
+}
+
+main-header {
+  background-color: #F8CF9F;
+  padding: 250px;
+}
+
+body {
+  margin: 0%;
+}
+
+section {
+  display: flex;
+}
+
+.section a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(45, 58, 45);
+
+}
+
+.project-name {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 25px;
+  margin: 0px;
+  font-weight: 800;
+}
+
+
+h1 {
+  font-size: 65px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 33px;
+  margin: 0px;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  margin: 0px;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  line-height: 2.5vh;
+}
+
+.p1 {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.p2 {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+#profile {
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+  background: rgb(251, 251, 251);
+
+}
+
+.footer-des {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  color: rgb(162, 162, 162);
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap:1vw;
+  width: 8vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar-burger {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
+  .logo{
+    font-size: 18px;
+  }
+  .p{
+    font-size: 16px;
+  }
+  .footer-icons{
+    width:13vw;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #burger-menu {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .p1 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 2vh;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .p2 {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    letter-spacing: 1px;
+  }
+}
+@media(max-width:500px){
+  footer{
+    flex-direction: column-reverse;
+    gap:2vh;
+  }
+  .footer-icons{
+    gap:2vw;
+    width:20vw;
+  }
+
+}
+@media (max-width: 430px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.5vh;
+  }
+  .logo{
+    font-size: 16px;
+  }
+}

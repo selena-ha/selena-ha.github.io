@@ -1,0 +1,76 @@
+.logo:hover{
+  color: rgb(147, 147, 147) !important
+}
+.nav-item > a:hover {
+  color: rgb(147, 147, 147) !important
+}
+  .about-main{
+    background: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-header{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-top: 6vh;
+    justify-content: space-evenly;
+    width: 80vw;
+  }
+  .about-paragraph{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    max-width: 35vw;
+    padding: 5vh 0;
+    gap: 4vh;
+  }
+  .design{
+    max-width: 20vw;
+  }
+  .about-me-img{
+    display: flex;
+    flex-direction: row;
+    max-width: 30vw;
+    object-fit: cover;
+    gap: 1vw;
+    padding: 3vh 0;
+  }
+  #coffee{
+    height:60vh;
+  }
+  .design-list{
+    font-size: 30px;
+    font-family: Arial;
+    ;
+  }
+  .about-section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 3vh 0;
+    background: rgb(249, 249, 249);
+  }
+  @media (max-width:1500px){
+    .about-paragraph{
+      padding:0 0;
+    }
+  }
+  @media (max-width:768px){
+    .about-header{
+      flex-direction: column;
+      gap: 6vh;
+      align-items: center;
+      max-width: 60vw;
+    }
+    .about-paragraph{
+      max-width:60vw;
+    }
+    .about-me-img{
+      flex-direction: column;
+    }
+    #coffee{
+      max-width:60vw;
+    }
+  }

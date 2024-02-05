@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medpak.css" type="text/css"/>
+    <link rel="stylesheet" href="global.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/41c153371b.js" crossorigin="anonymous"></script>
+
+</head>
+<script>
+    function toggleBurger() {
+        var x = document.getElementById("burger-menu");
+        console.log(x)
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+<body>
+    <nav class="navbar" style="background:#bfa9de;">
+        <a href="/">
+            <p class="logo " style="color: white;">Selena Ha</p>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="about.html" style="color:white">About</a></li>
+            <li class="nav-item"><a href="projects.html" style="color:white">Projects</a></li>
+            <li class="nav-item"><a href="#" style="color:white">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="navbar-burger" style="background:#bfa9de;">
+        <a href="/">
+            <p class="logo" style="color: white;">Selena Ha</p>
+        </a>
+        <button style="background:#bfa9de; color:white" class="fa fa-bars" onclick=toggleBurger()></button>
+    </div>
+    <nav>
+        <ul src="#" id="burger-menu">
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="project-header">
+        <main class="main-header">
+            <div class="main-title">
+                <h4>MedPak</h4>
+                <h2 class="project-title">Access medical documents digitally.</h2>
+                <div class="project-detail">
+                    <p>Role: UX Designer, UX Researcher</p>
+                    <p>Duration: 7 months</p>
+                    <p>Tools: Google Survey, Marvel, Zoom, Slack, Usability Hub, Figma, Optimal Workshop</p>
+                </div>
+            </div>
+            <img src="/assets/Home Screen.png" class="img-home">
+        </main>  
+    </header>
+    <section class="project-body">
+        <div class="background-container">
+            <div class="background">
+                <div class="paragraph-block">
+                    <h3>Background</h3>
+                    <p>The increase of medical and healthcare apps and platforms, while offering diverse benefits, can create confusion and challenges for individuals trying to stay on top of their health demands. MedPak will provide users the confidence to stay on top of their health and wellness information. Users will have access to medical documents, manage appointments and learn more about health and wellness information.</p>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="paragraph-block">
+                    <h3>Problem</h3>
+                    <p>Patient’s health data and documents are scattered across these platforms, making it difficult to access a comprehensive overview of one’s health status.</p>
+                </div>
+            </div>
+            <div class="objective">
+                <div class="paragraph-block">
+                    <h3>Objective</h3>
+                    <p>Simplifying access across these platforms could alleviate the confusion and difficulties associated with tracking medical documentation and information spread across multiple apps. The app aims to relieve stress when managing documents and appointments. Users will feel in charge of their health and enhance their wellbeing and lifestyle.</p>
+                </div>
+            </div>
+            <div class="design-process">
+                <div class="paragraph-block">
+                    <h4 style="padding-bottom: 1vh">How I got there</h4>
+                    <img src="/assets/Design Thinking Process.png" class="img-design-thinking">
+                </div>
+            </div>
+        </div>
+        <div class="paragraph-block">
+            <h6>RESEARCH</h6>
+            <h3>Competitive Analysis</h3>
+            <p>In response to the recent pandemic, online medical services were accepted quickly as in-person visits were limited. It has reshaped the way healthcare is delivered and accessed by individuals. To take a look at how the online medical services are employed, I did a competitive analysis to identify the things that are going well and any pain points users are experiencing.</p>
+            <div class="img-block">
+                <img src="/assets/webmd.png" class="img-app">
+                <img src="/assets/dothealth.png" class="img-app">
+            </div>
+            <div class="grid-container">
+                <div class="item1"></div>
+                <div class="item2">WebMD</div>
+                <div class="item3">Dot Health</div>
+                <div class="item4">Strengths</div>
+                <div class="item5">Offers a great wealth of knowledge to enable a larger target market. It has features such as "Find a Doctor" and "Identify symptoms, allergies or drugs". The overall process for accessing health and wellness information is smooth.</div>
+                <div class="item6">Great engagement with simple design. It reaches their goals of collecting medical documentations.</div>
+                <div class="item7">Weaknesses</div>
+                <div class="item8">The features of the app are mainly focused on articles. Icons are specific and detailed, making it unrecognizable for users. Text boxes are hard to differentiate. </div>
+                <div class="item9">Information are missing on certain pages. The menu becomes cluttered with overlapping buttons. Users cannot experience the app fully without requesting documents and completing payment.</div>
+            </div>
+        </div>
+        <div class="paragraph-block">    
+            <h3>User Surveys and User Interviews</h3>
+            <p style="margin-bottom:3vh">I conducted a survey and an interview to better understand user’s health and wellbeing goals, what tools they are using to track their goals and how they store their current medical files. The survey consisted of 15 questions and gathered 10 responses. The interview included 12 questions with 5 participants.</p>
+            <div class="grid-container2">
+                <div class="percent">70%</div>
+                <div class="percent2">40%</div>
+                <div class="percent3">90%</div>
+                <p1 class="percent4">of people have used a website or app to receive results.</p1>
+                <p1 class="percent5">of people use physical copies to store medical documents.</p1>
+                <p1 class="percent6">prefer to book appointments through online portal vs. in-person or phone call.</p1>
+            </div>   
+            <div class="quote"> “The interface is difficult to navigate and not very straight forward. Things are chunky and seems to have a steep learning curve.”</div>
+        </div>
+    <section class="paragraph-block">
+        <h3>Pain Points</h3>
+        <p>The data collected helped shed light on the user’s goals and frustrations. I can understand their objectives and problems and now move forward with the design process for MedPak.</p>
+        <div>
+           <ol class="list">
+            <li>Medical apps have features that are enjoyable such as viewing results and appointments however find it hard to navigate.</li> 
+            <li>Users want to find better ways to organize medical information and cut down on the waiting time to receive reports and documents.</li>
+            <li>Many prefer to book appointments online vs. phone and all users preferred in-person appointments, highlighting the importance of scheduling</li>
+            </ol>
+        </div>
+    </section>
+    <section class="paragraph-block">
+        <h6 style="padding: 1.5vh 0;">DEFINE</h6>
+        <h3>User Personas</h3>
+        <p>I created two personas to investigate a set of users’ needs and develop my app with the certain target user in mind.</p>
+    </section>
+    <section class="img-block2">
+        <img src="/assets/User Persona 1.jpg" class="img-user">
+        <img src="/assets/User Persona 2.jpg" class="img-user" style="padding-bottom:4vh">
+    </section>
+    <section class="paragraph-block">
+        <h3>User Journey Map</h3>
+        <p>Next, I created a user journey map to determine the process and emotions a user would have in order to accomplish their goal.</p>
+    </section>
+    <section class="img-block2">
+        <img src="/assets/User Journey Map.jpg" class="img-persona">
+        <img src="/assets/Site Map.jpg" class="img-persona" style="padding-bottom: 4vh;">
+    </section>
+    <section class="paragraph-block">
+        <h6 style="padding: 1.5vh 0;">IDEATION</h6>
+        <h3>Card Sort and Site Map</h3>
+        <p>I began to brainstorm ideas and evaluated them using card sorts and site maps. Creating a site map allowed me to visualize the app’s information structure. A opened card sort and closed card sort was conducted to grasp user’s preferences and mental models. Based on the insights, the site map was revised.</p>
+    </section>
+    <section class="img-block2">
+        <img src="/assets/Card Sort.png" class="img-persona">
+    </section>
+    <section class="paragraph-block">
+        <h3>Wireframes</h3>
+        <p>Now that the structure of the app is clear, I sketched out the design foundations with pencil and paper and then digitized to use for testing.</p>
+        <h5 style="padding: 2vh 0;">Low-Fidelity Prototypes</h5>
+        <section class="grid-container3">
+            <div class="lofi1"><img src="/assets/lofi_records.jpg" class="img-wireframe"></div>
+            <div class="lofi2"><img src="/assets/lofi_appt.jpg" class="img-wireframe"></div>
+            <div class="lofi3"><img src="/assets/lofi_article.jpg" class="img-wireframe"></div>
+            <div class="lofi4" style="font-weight: 500;"><p>Share records</p></div>
+            <div class="lofi5"><p>Book an appointment</p></div>
+            <div class="lofi6"><p>Find an article</p></div>
+            <div class="lofi7"><img src="/assets/midfi_records.jpg" class="img-wireframe"></div>
+            <div class="lofi8"><img src="/assets/midfi_appt.jpg" class="img-wireframe"></div>
+            <div class="lofi9"><img src="/assets/midfi_article.jpg" class="img-wireframe"></div>
+            <div class="lofi10"style="font-weight: 500;"><p>Share records</p></div>
+            <div class="lofi11"><p>Book an appointment</p></div>
+            <div class="lofi12"><p>Find an article</p></div>
+        </section>
+    </section>
+    <section class="paragraph-block">
+        <h6 style="padding: 1.5vh 0;">DESIGN</h6>
+        <h3>Usability Testing</h3>
+        <p>With the mid-fidelity prototypes, I conducted a moderated remote and in-person usability test. Six test participants were recruited from my personal network to understand any difficulties the user may have when navigating to their goal. In each session, the participants are given a set of scenarios and asked to complete the desired task.</p>
+        <div>
+            <p style="font-weight:800">Objectives</p>
+            <ol class="list">
+                <li>If participants are able to access the document and share it with a doctor. </li> 
+                <li>Measure how users would find a doctor.</li>
+                <li>Can participants book an appointment with the chosen doctor?</li>
+                <li>How will the participants access resources and articles? </li>
+                </ol>
+        </div>
+        <h3 style="padding-top:1em">Usability Testing Analysis</h3>
+        <p>After organizing the data from the usability testing, I extracted and grouped information collaboratively using four groups: Observations, Positive Quotes, Negative Quotes and Errors. Then I used a Rainbow Spreadsheet to visualize unseen patterns and hierarchies that had emerge. I was able to pinpoint the key problems that users were having and looked into possible solutions.</p>
+    </section>
+    <section class="img-block2">
+            <img src="/assets/Usability Test Analysis.jpg" class="img-persona">
+    </section>
+    <section class="paragraph-block">
+        <h3>Issues and Solutions</h3>
+        <p>The following are the key problems that were identified during the analysis and their solutions to improve overall user experience.</p>
+        <h5 style="padding-top:1em">Problems</h5>
+        <div>
+            <ol class="list">
+                <li>Users had a hard time “Adding a new doctor” to their profile.</li> 
+                <li>Users assumed the Account tab was for settings features and had hard time finding personal information.</li>
+                <li>Users felt the bookmarked resources in the Account tab to be unnatural.</li>
+                </ol>
+        </div>
+        <h5 style="padding-top:1em">Solutions</h5>
+        <div class="grid-container2" style="padding-top:2em">
+            <img src="/assets/ic_search.png" class="ic-search"">
+            <img src="/assets/ic_bookmark.png" class="ic-bookmark">
+            <img src="/assets/ic_account.png" class="ic-account">
+            <div class="ic-search2">
+                <p>Make the search bar functional and distinct. Ensure the language is clear by inputting titles and placeholders.</p>
+            </div>
+            <div class="ic-bookmark2">
+                <p>Change the location of bookmarked resources to the Resource tab for better grouping and navigation.</p>
+            </div>
+            <div class="ic-account2">
+                <p>Change the titles within the Account tab for better understanding.</p>
+            </div>
+        </div>
+        </section>
+    <section class="paragraph-block">
+        <h3>Design System</h3>
+        <p>The use of design system to document UI specifics and organize design deliverables in Figma.</p>
+    </section>
+    <section class="img-block2">
+            <img src="/assets/Design System.jpg" class="img-design-system">
+    </section>
+    </section>
+    <section class="final-screens">
+        <div>
+            <h4>FINAL SCREENS</h4>
+        </div>
+        <div class="img-block3">
+            <img src="/assets/Welcome Screen.png" class="img-final">
+            <img src="/assets/Home Screen (Short).png" class="img-final">
+            <img src="/assets/My Records.png" class="img-final">
+            <img src="/assets/Michael Olah.png" class="img-final">
+            <img src="/assets/Resources-short.png" class="img-final">
+            <img src="/assets/Save Article.png" class="img-final">
+            <img src="/assets/Emily Turner Profile.png" class="img-final">
+        </div>
+        <div class="project-link">
+            <a href="https://www.figma.com/proto/5sibIzlt3wa5fM2hrMj4TR/MedPak-Task-5.10?page-id=0%3A1&type=design&node-id=512-2645&viewport=-2767%2C1223%2C0.96&t=Zq2ABmAQNV0Ud98u-1&scaling=scale-down&starting-point-node-id=512%3A2645&mode=design" class="button"><p>View Prototype</p></a>
+        </div>       
+    </section>
+    <section class="project-body">
+        <section class="paragraph-block">
+            <h6>TAKEAWAY</h6>
+            <h3>Challenges and Learnings</h3>
+            <p>I had the opportunity to study and experience each stage of the design process while working on this project. Being faced with challenges and overcoming them made for an insightful journey.</p>
+            <h3 style="padding-top: 4vh;">What's Next?</h3>
+            <p style="padding-bottom: 8vh;">My next step would be to design for tablets and desktop, creating a responsive web app.
+                I would work on another feature to add to the app, which would be to have multiple profiles under one account for users who care for family members.
+                I would conudct user research with health professionals to learn from their side, how the app can better the communication between patients and professionals.</p>
+        </section>
+    </section>
+    <footer style="background-color: white;">
+        <p class="footer-des">Copyright @ 2023 Selena Ha. All Rights Reserved.</p>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/selena-ha/" target="_blank" style="text-decoration: none;color: black;">
+                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://www.behance.net/selenaha_" target="_blank" style="text-decoration: none;color: black;">
+                <i class="fa-brands fa-behance fa-lg"></i>
+            </a>
+            <a href="/assets/PDF/Resume.pdf" target="_blank" style="text-decoration: none;color: black;">        
+                <i class="fa-regular fa-file fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

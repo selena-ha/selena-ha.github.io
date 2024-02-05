@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selena Ha</title>
+    <link rel="stylesheet" href="project.css" type="text/css"/>
+    <link rel="stylesheet" href="global.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/41c153371b.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function toggleBurger() {
+        var x = document.getElementById("burger-menu");
+        console.log(x)
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+
+<body>
+    <nav class="navbar" style="background: rgb(251, 251, 251);" >
+        <a href="/">
+            <p class="logo">Selena Ha</p>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="navbar-burger" style="background: rgb(249, 249, 249);">
+        <a href="/">
+            <p class="logo">Selena Ha</p>
+        </a>
+        <button class="fa fa-bars" onclick=toggleBurger() style="background: rgb(249, 249, 249);"></button>
+    </div>
+        <nav>
+            <ul src="#" id="burger-menu">
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="projects.html">Projects</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+<body>
+    <div class="project-grid-container">
+        <div class="item7"><h3>Projects</h3></div>
+            <a href="medpak.html" class="item8">
+                <div class="project-card">
+                    <img src="assets/medpak-thumbnail.png" class="card-image"/>
+                    <div class="card-des">
+                        <p class="p1"> DESIGN SYSTEM AND UX DESIGN</p>
+                        <h3>MedPak</h3>
+                        <p> Empowering individuals by taking charge of their health and enhancing their wellbeing and lifestyle.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="perfect-property.html" class="item9">
+                <div class="project-card">
+                    <img src="assets/PP-thumbnail.png" class="card-image"/>
+                    <div class="card-des">
+                        <p class="p1"> UI DESIGN AND VISUAL DESIGN</p>
+                        <h3>Perfect Properties</h3>
+                        <p> Improving the way home buyers search for their new home. </p>
+                    </div>
+                </div>
+            </a>
+            <!---
+            <div class="item10">
+                <div class="project-card">
+                    <img src="assets/pho.jpg" class="card-image"/>
+                    <div class="card-des">
+                        <p class="p1"> UX & UI DESIGN AND DESIGN SYSTEM</p>
+                        <h3>Pho Pad Thai</h3>
+                        <p>Redesigning the online order process for the restaurant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item11"></div>-->
+        </div>
+        <footer>
+            <p class="footer-des">Copyright @ 2023 Selena Ha. All Rights Reserved.</p>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/selena-ha/" target="_blank" style="text-decoration: none;color: black;">
+                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                </a>
+                <a href="https://www.behance.net/selenaha_" target="_blank" style="text-decoration: none;color: black;">
+                    <i class="fa-brands fa-behance fa-lg"></i>
+                </a>
+                <a href="/assets/PDF/Resume.pdf" target="_blank" style="text-decoration: none;color: black;">        
+                    <i class="fa-regular fa-file fa-lg"></i>
+                </a>
+            </div>
+        </footer>
+    </body>
+    </html>

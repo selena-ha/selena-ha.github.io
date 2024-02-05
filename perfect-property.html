@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfect-property.css" type="text/css" />
+    <link rel="stylesheet" href="global.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/41c153371b.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function toggleBurger() {
+        var x = document.getElementById("burger-menu");
+        console.log(x)
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+
+<body>
+    <nav class="navbar" style="background:#7A8999">
+        <a href="/">
+            <p class="logo-pp logo" style="color: white;">Selena Ha</p>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="about.html" style="color:white">About</a></li>
+            <li class="nav-item"><a href="projects.html" style="color:white">Projects</a></li>
+            <li class="nav-item"><a href="#" style="color:white">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="navbar-burger" style="background:#7A8999;">
+        <a href="/">
+            <p class="logo" style="color: white;">Selena Ha</p>
+        </a>
+        <button style="background:#7A8999; color:white" class="fa fa-bars" onclick=toggleBurger()></button>
+    </div>
+    <nav>
+        <ul src="#" id="burger-menu">
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="project-header">
+        <main class="main-header">
+            <div class="main-title">
+                <h4>Perfect Property</h4>
+                <h2 class="project-title">Find the home for you.</h2>
+                <div class="project-detail">
+                    <p>Role: UX Designer, UI Designer</p>
+                    <p>Duration: 2 months</p>
+                    <p>Tools: Figma, Slack</p>
+                </div>
+            </div>
+            <img src="/assets/desktop_home.png" class="img-home">
+        </main>
+    </header>
+    <section class="project-body">
+        <div class="background-container">
+            <div class="background">
+                <div class="paragraph-block">
+                    <h3>Background</h3>
+                    <p>Real estate investment is an increasingly popular way for individuals to achieve financial
+                        security. The abundance of blogs and agencies providing information may be overwhelming for
+                        buyers new to the market. This web app will provide them with the expertise needed to get
+                        started efficiently.</p>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="paragraph-block">
+                    <h3>Problem</h3>
+                    <p>New buyers entering the real estate market may have a challenging time knowing where to start
+                        because there are so many things to take into account, including location, cost, and type of
+                        property. Additionally, the process of searching for properties can be time-consuming and
+                        complicated because there is a lot of data to sort through.</p>
+                </div>
+            </div>
+            <div class="objective">
+                <div class="paragraph-block">
+                    <h3>Objective</h3>
+                    <p>Create an app where users are able to search for properties using suitable search criteria
+                        entered by the user. When the user finds a property listing of choice, they are able to easily
+                        view it and return to it. To have a smoother experience, users will have access to relevant and
+                        comprehensive information about properties. It will be quick and easy to use it on the go.</p>
+                </div>
+            </div>
+            <div class="design-process">
+                <div class="paragraph-block">
+                    <h4 style="padding-bottom: 1vh">How I got there</h4>
+                    <img src="/assets/Design Thinking Process- PP.png" class="img-design-thinking">
+                </div>
+            </div>
+        </div>
+        <div class="paragraph-block">
+            <h6>EMPATHIZE</h6>
+            <h3>Competitive Research</h3>
+            <p>Before outlining the user journey and defining the path they would take, I wanted to gain insights into
+                the thoughts and challenges users faced while using existing real estate apps. I delved into the reviews
+                of two real estate apps available on the Google Play store. These apps featured functions such as a
+                search and filter option, providing home information, and allowing users to save preferences through
+                individual accounts. </p>
+            <img src="/assets/Competitve-Analysis-PP.png" class="img-app">
+            <p style="padding-top:4vh;">A recurring issue highlighted in the reviews that impacted users' overall
+                experience revolved around the search function. Users expressed difficulty in accessing the filter
+                function to narrow their searches, resulting in a slower experience. Additionally, the filter lacked
+                essential options, hindering users from finding homes that aligned with their specific goals.</p>
+            <h4 style="padding-top: 4vh;">The Solution</h4>
+            <p>By taking note of the users' feedback in the reviews, I aim to develop a real estate app that will
+                highlight the effectiveness of searching, emphasizing the utilization of filters and the map function. I
+                will strategically outline the app's flow to better organize the information and construction of the
+                app.</p>
+        </div>
+        <div class="paragraph-block">
+            <h3>User Persona</h3>
+            <p>To ensure the app will provide an intuitive but informative experience, I created a user persona that is
+                new to the real estate market and would like to get to know more about the tools she can use to achieve
+                her goals. </p>
+            <img src="/assets/user-persona-PP.jpg" class="img-app">
+            <h3 style="padding-top: 4vh;">User Flow</h3>
+            <p>To better understand and visualize the roadmap users will follow to achieve her goals, I built a user
+                flow diagram. This visual representation helped me understand how users will interact with the platform
+                and ensure a smooth and intuitive journey.</p>
+            <img src="/assets/User Flow-PP.jpg" class="img-app">
+        </div>
+        <div class="paragraph-block">
+            <h6>DEFINE & IDEATE</h6>
+            <h3>Wireframes</h3>
+            <p>After I examed the user persona and user flow diagram, I began sketching the main functionalities with paper and pencil.</p>
+            <h5 style="padding: 3vh 0 0 0; text-align: center">Paper and Pencil</h5>
+            <div class="grid-container">
+                <div class="item1"><img src="/assets/Lofi-account.png" class="img-wireframe"></div>
+                <div class="item2"><img src="/assets/lofi-property-listing.png" class="img-wireframe"></div>
+                <div class="item3"><img src="/assets/lofi-search.png" class="img-wireframe"></div>
+                <div class="item4"><p>Create account</p></div>
+                <div class="item5"><p>Property listing and watched</p></div>
+                <div class="item6"><p>Search and filter</p></div>
+            </div>
+            <h5 style="padding: 3vh 0 0 0; text-align: center;">Low-Fidelity Responsive Breakpoints</h5>
+            <div class="grid-container2">
+                <div class="item1"><img src="/assets/Tablet-Home-Lofi.png" class="lofi-tablet"></div>
+                <div class="item2"><img src="/assets/Desktop-Home-Lofi.png" class="lofi-desktop"></div>
+                <div class="item3"><p>Tablet (Home page)</p></div>
+                <div class="item4"><p>Desktop (Home page)</p></div>
+            </div>
+            <div class="grid-container2">
+                <div class="item1"><img src="/assets/Tablet-Property Listing-Lofi.png" class="lofi-tablet"></div>
+                <div class="item2"><img src="/assets/Desktop-Property Listing-Lofi.png" class="lofi-desktop"></div>
+                <div class="item3"><p>Tablet (Home page)</p></div>
+                <div class="item4"><p>Desktop (Home page)</p></div>
+            </div>
+            <h5 style="padding: 3vh 0 0 0; text-align: center">Mid-Fidelity Wireframes</h5>
+            <img src="/assets/Mid-Fidelity Mobile.jpg" style="width: 60vw; padding-top: 4vh;">
+            <h5 style="padding: 7vh 0 0 0; text-align: center">Mid-Fidelity Responsive Breakpoints</h5>
+            <div class="grid-container2">
+                <div class="item1"><img src="/assets/mifi-tablet-home.png" class="lofi-tablet"></div>
+                <div class="item2"><img src="/assets/mifi-desktop-home.png" class="lofi-desktop"></div>
+                <div class="item3"><p>Tablet (Home page)</p></div>
+                <div class="item4"><p>Desktop (Home page)</p></div>
+            </div>
+            <div class="grid-container2">
+                <div class="item1"><img src="/assets/mifi-tablet-listing.png" class="lofi-tablet"></div>
+                <div class="item2"><img src="/assets/mifi-desktop-listing.png" class="lofi-desktop"></div>
+                <div class="item3"><p>Tablet (Property Listing)</p></div>
+                <div class="item4"><p>Desktop (Property Listing)</p></div>
+            </div>
+        </div>
+        <div class="paragraph-block" style="padding: 4vh 0 8vh 0">
+            <h6>DESIGN</h6>
+            <h3>Mood Board</h3>
+            <p>I put together a mood board to collect ideas to help set the project's tone.</p>
+            <img src="/assets/Mood-board.png" style="width:40vw; margin: auto;">
+            <h3>Visual Style Guide</h3>
+            <p>The use of a visual style guide will provide consistent visual and UI element throughout the project.</p>
+            <img src="/assets/Style Guide (Short).png" style="width: 50vw; margin:auto;">
+            <a href="/assets/PDF/Style Guide final.pdf" target=”_blank” class="link">
+                <p>Check out the full style guide here!</p>
+            </a>
+        </div>
+    </section>
+    <section class="final-screens">
+        <div class="paragraph-block" style="padding-top: 8vh;">
+            <h3 style="color:white;">The Outcome</h3>
+            <img src="/assets/Final Screens.png" class="final-imgs">
+        </div>
+        <div class="img-block2" style="background:#7A8999;">
+            <h5 style="color:white;">High-Fidelity Responsive Breakpoints</h5>
+            <img src="/assets/Final Responsive Breakpoints.png" style="width:60vw; padding-top: 4vh;">
+            <p style="color:white;">Home page</p>
+        </div>
+        <div class="img-block2">
+            <img src="/assets/Final Responsive Breakpoints 2.png" style="width:60vw;">
+            <p style="color:white;">Property listing</p>
+        </div>
+        <div class="paragraph-block" style="padding-bottom: 8vh;">
+            <h3 style="color: white; padding-bottom: 2vh">Interface in Action</h3>
+            <video controls class="video">
+                <source src="/assets/Interactive.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="project-body" style="padding-top:8vh; padding-bottom: 8vh;">
+        <h3>Conclusion</h3>
+        <div class="paragraph-block">
+            <p>During this project, in my bootcamp journey, I was able to focus on the UI principles and visual design process. I was able to dive deeper into the UI principles and understand the functionality and usability for each element. This supports the decisions, I will need to make as an UX Designer to meet the users goals while maxmizing efficiency.</p>
+            <p>Creating Perfect Propoerty was an enjoyable experierence as I had the chance to learn and experiment with gestures and interactions. The project challenged myself strategically and creatively and I look forward to strengthening my skills through practice in my UX/UI career.</p>
+        </div>    
+    </section>
+    <footer style="background-color: white;">
+        <p class="footer-des">Copyright @ 2023 Selena Ha. All Rights Reserved.</p>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/selena-ha/" target="_blank" style="text-decoration: none;color: black;">
+                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://www.behance.net/selenaha_" target="_blank" style="text-decoration: none;color: black;">
+                <i class="fa-brands fa-behance fa-lg"></i>
+            </a>
+            <a href="/assets/PDF/Resume.pdf" target="_blank" style="text-decoration: none;color: black;">        
+                <i class="fa-regular fa-file fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.logo:hover{
+  color: rgb(147, 147, 147) !important
+}
+.nav-item > a:hover {
+  color: rgb(147, 147, 147) !important
+}
+.item7{
+  grid-area: header; 
+  padding: 3vh 0vw 0vh 0vw;
+}
+.item8{
+  grid-area: project1;
+  width: 37vw;
+  text-decoration: none;
+  color:black;
+  transition: transform 0.7s;
+  }
+
+.item8:hover {
+  transform: translate(4px, -4px);
+}
+.item9{
+  grid-area: project2;
+  width: 37vw;
+  text-decoration: none;
+  color:black;
+  transition: transform 0.7s;
+}
+
+.item9:hover {
+  transform: translate(4px, -4px);
+}
+.item10{
+  grid-area: project3;
+  width: 37vw;
+}
+.item11{
+  grid-area: project4;
+  width: 37vw;
+
+}
+.project-grid-container{
+  background: rgb(251, 251, 251);
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "project1 project2"
+    "project3 project4";
+    justify-content: center;
+    grid-row-gap:5vh;
+    grid-column-gap: 4vw;
+}
+  .project-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10em;
+    background: rgb(251, 251, 251);
+  }
+  .project-card{
+    display:flex;
+    flex-direction: column;
+    width: 35vw;
+    background:rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 6px 6px 6px 0px rgb(236, 236, 236);
+  }
+  .card-des{
+    padding: 3vh 2vw;
+    display: flex; 
+    flex-direction: column;
+    gap: 2vh;
+    height: 16vh;
+  }
+  .card-image{
+    width: 37vw;
+    object-fit: fill;
+  }
+  .card-link{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .project-section2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10em;
+    padding-top: 3em;
+    background:rgb(249, 249, 249);
+  }
+  @media(max-width:1181px){
+    .card-des{
+      height:18vh;
+    }
+  }
+  @media (max-width: 900px){
+    .card-des{
+      height:20vh;
+    }
+  }
+  @media (max-width: 800px){
+    .project-grid-container{
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+    }
+    .item8{
+      width: 76vw;
+    }
+    .item9{
+      width: 76vw;
+    }
+    .item10{
+      width: 76vw;
+    }
+    .item11{
+      width: 76vw;
+    }
+    .project-card{
+      width: 76vw;
+    }
+    .card-image{
+      width: 76vw;
+    }
+    .card-des{
+      padding: 4vh 6vw;
+      height: 15vh;
+    }
+  
+  }
+  @media (max-width:430px){
+    .card-des{
+      height: 12vh;
+    }
+  }
