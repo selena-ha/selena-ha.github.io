@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="global.css" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/41c153371b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="icon" href="/assets/portfolio-icon.png">
@@ -34,7 +33,7 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-item"><a href="about.html" style="color:white">About</a></li>
-            <li class="nav-item"><a href="projects.html" style="color:white">Projects</a></li>
+            <li class="nav-item-on"><a href="projects.html" style="font-weight: 700; text-decoration: none; color: rgb(255, 255, 255);">Projects</a></li>
             <li class="nav-item"><a href="mailto:selena.ha099@gmail.com?subject=Hello" style="color:white">Get in touch</a></li>
         </ul>
     </nav>
@@ -47,8 +46,7 @@
     <nav>
         <ul src="#" id="burger-menu">
             <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="projects.html">Projects</a></li>
-            <li class="nav-item"><a href="mailto:selena.ha099@gmail.com?subject=Hello">Get in touch</a></li>
+            <li class="nav-item-on"><a href="projects.html" style="font-weight: 700; text-decoration: none; color: rgb(57, 57, 57);">Projects</a></li>            <li class="nav-item"><a href="mailto:selena.ha099@gmail.com?subject=Hello">Get in touch</a></li>
         </ul>
     </nav>
     <header class="project-header">
@@ -151,15 +149,26 @@
     </section>
     <section class="img-block2">
         <img src="/assets/User Journey Map.jpg" class="img-persona">
-        <img src="/assets/Site Map.jpg" class="img-persona" style="padding-bottom: 4vh;">
+        <img src="/assets/Site Map.jpg" class="img-persona" style="padding: 3vh 0 4vh 0;">
     </section>
     <section class="paragraph-block">
         <h6 style="padding: 1.5vh 0;">IDEATION</h6>
         <h3>Card Sort and Site Map</h3>
-        <p>I began to brainstorm ideas and evaluated them using card sorts and site maps. Creating a site map allowed me to visualize the app’s information structure. A opened card sort and closed card sort was conducted to grasp user’s preferences and mental models. Based on the insights, the site map was revised.</p>
-    </section>
-    <section class="img-block2">
-        <img src="/assets/Card Sort.png" class="img-persona">
+            <p>I began to brainstorm ideas and evaluated them using card sorts and site maps. Creating a site map allowed me to visualize the app’s information structure. A opened card sort and closed card sort was conducted to grasp user’s preferences and mental models. Based on the insights, the site map was revised.</p>
+            <div class="img-block2">
+                <img src="/assets/Card Sort.png" class="img-persona">
+            </div>
+        <h3>Site Map</h3>
+            <p>The Main changes that occured after both card sorts were:</p>
+            <ol class="list">
+                <li>Changing the names of the headers, such as "Communications" to "My Doctors" and "Research" to "Resources".</li> 
+                <li>Grouping the "Profile" cards together with the "Setting" cards.</li>
+                <li>Changing the name of some cards to reflect the words participants used.</li>
+            </ol>
+            <div class="site-map">
+                <img src="/assets/Site map.png" class="site-map-img">
+                <img src="/assets/Site-map-revised.png" class="site-map-img">
+            </div>
     </section>
     <section class="paragraph-block">
         <h3>Wireframes</h3>
@@ -201,7 +210,7 @@
     </section>
     <section class="paragraph-block">
         <h3>Issues and Solutions</h3>
-        <p>The following are the key problems that were identified during the analysis and their solutions to improve overall user experience.</p>
+        <p>The following are the key problems that were identified during the analysis and their solutions. Revisions and iterations were made based on the solutions to improve the overall user experience.</p>
         <h5 style="padding-top:1em">Problems</h5>
         <div>
             <ol class="list">
@@ -216,7 +225,7 @@
             <img src="/assets/ic_bookmark.png" class="ic-bookmark">
             <img src="/assets/ic_account.png" class="ic-account">
             <div class="ic-search2">
-                <p>Make the search bar functional and distinct. Ensure the language is clear by inputting titles and placeholders.</p>
+                <p>Allow users to search and book an appointment with a doctor without the need to add the doctor first. Ensuring the search bar is distinct and has clear language.</p>
             </div>
             <div class="ic-bookmark2">
                 <p>Change the location of bookmarked resources to the Resource tab for better grouping and navigation.</p>
@@ -225,7 +234,7 @@
                 <p>Change the titles within the Account tab for better understanding.</p>
             </div>
         </div>
-        </section>
+    </section>
     <section class="paragraph-block">
         <h3>Design System</h3>
         <p>The use of design system to document UI specifics and organize design deliverables in Figma.</p>
@@ -234,14 +243,16 @@
             <img src="/assets/Design System.jpg" class="img-design-system">
     </section>
     </section>
+
     <section class="final-screens">
         <div>
             <h4>FINAL SCREENS</h4>
         </div>
         <div class="img-block3">
             <img src="/assets/Welcome Screen.png" class="img-final">
-            <img src="/assets/Home Screen (Short).png" class="img-final">
+            <img src="/assets/Home Screen-short.png" class="img-final">
             <img src="/assets/My Records.png" class="img-final">
+            <img src="/assets/Find a doctor.png" class="img-final">
             <img src="/assets/Michael Olah.png" class="img-final">
             <img src="/assets/Resources-short.png" class="img-final">
             <img src="/assets/Save Article.png" class="img-final">
@@ -255,11 +266,15 @@
         <section class="paragraph-block">
             <h6>TAKEAWAY</h6>
             <h3>Challenges and Learnings</h3>
-            <p>I had the opportunity to study and experience each stage of the design process while working on this project. Being faced with challenges and overcoming them made for an insightful journey.</p>
-            <h3 style="padding-top: 4vh;">What's Next?</h3>
-            <p style="padding-bottom: 8vh;">My next step would be to design for tablets and desktop, creating a responsive web app.
-                I would work on another feature to add to the app, which would be to have multiple profiles under one account for users who care for family members.
-                I would conudct user research with health professionals to learn from their side, how the app can better the communication between patients and professionals.</p>
+            <p style="padding-top: 2vh;">The process of building Medpak has taught me a lot, I was able to place my knowledge and learning into practice and build on skills in user research, usability testing, design systems, connecting and collaborating with mentors and students, and more. </p>
+            <p style="padding-top: 2vh;">My challenges and and key takeaways from this project are as followed. After reviewing the usability testing, I realized that parts of my design and concepts needed to be let go.  Both the qualitative and quantitative data indicated that some concepts were causing difficulty in navigating to their goal. As an UX Designer, I had to take a step back and change direction in response to the data. </p>
+            <p style="padding-top: 2vh;">This leads to the next learning I had, which was the cycle of prototyping, testing and iterating. After many iterations, Medpak will continue to go through this cycle as the design and information architecture will continuously evolve over time dependent on usability trends and user preferences. Further improvements constant growth is important when building projects. </p>
+            <p>Overall, being faced with challenges and overcoming them during the creation of Medpak has made for an insightful journey.</p>
+            <h3 style="padding-top: 6vh;">What's Next?</h3>
+            <p style="padding-top: 2vh;">My next step would be to design for tablets and desktop, creating a responsive web app.</p>
+            <p style="padding-top: 2vh;">I would work on another feature to add to the app, which would be to have multiple profiles under one account for users who care for family members.</p>
+            <p style="padding: 2vh 0 8vh 0;">I would conduct user research with health professionals to learn from their side, how the app can better the communication between patients and professionals.</p>
+        </p>
         </section>
     </section>
     <footer style="background-color: white;">

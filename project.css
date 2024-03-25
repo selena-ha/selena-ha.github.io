@@ -1,9 +1,4 @@
-.logo:hover{
-  color: rgb(147, 147, 147) !important
-}
-.nav-item > a:hover {
-  color: rgb(147, 147, 147) !important
-}
+
 .item7{
   grid-area: header; 
   padding: 3vh 0vw 0vh 0vw;

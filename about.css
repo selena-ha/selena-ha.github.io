@@ -1,44 +1,54 @@
-.logo:hover{
-  color: rgb(147, 147, 147) !important
-}
-.nav-item > a:hover {
-  color: rgb(147, 147, 147) !important
-}
+
   .about-main{
     background: rgb(251, 251, 251);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20vw ;
   }
   .about-header{
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    padding-top: 6vh;
-    justify-content: space-evenly;
-    width: 80vw;
+    padding: 6vh 0 6vh 0;
+    justify-content: space-between;
+    width: 60vw;
   }
   .about-paragraph{
     display: flex;
     flex-direction:column;
-    justify-content: space-evenly;
-    max-width: 35vw;
-    padding: 5vh 0;
+    justify-content: center;
+    max-width: 30vw;
     gap: 4vh;
   }
   .design{
     max-width: 20vw;
   }
   .about-me-img{
-    display: flex;
-    flex-direction: row;
-    max-width: 30vw;
+    width: 23vw;
+    height: 53vh;
     object-fit: cover;
-    gap: 1vw;
+    padding: 3vh 0;
+    border-radius: 100px;
     padding: 3vh 0;
   }
+  .about-photo{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+  }
+  .photo-section{
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    gap: 1vw;
+    padding: 0 0 10vh 0;
+    
+  }
   #coffee{
-    height:60vh;
+    height:45vh;
+    border-radius: 20px;
   }
   .design-list{
     font-size: 30px;
@@ -46,15 +56,66 @@
     ;
   }
   .about-section{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 4vh;
+    align-items:center;
+  }
+  #about-paragraph{
     display:flex;
     flex-direction:column;
-    align-items: center;
-    padding: 3vh 0;
+    padding: 5vh 0;
     background: rgb(249, 249, 249);
+    width: 50vw;
   }
-  @media (max-width:1500px){
+  .paragraph-text{
+    line-height: 4vh;
+  }
+  @media (max-width:1080px){
+    .about-header{
+      width: 70vw;
+    }
+    .paragraph-text{
+      line-height: 2vh;
+    }
+    .about-me-img{
+      width:34vw;
+      height:45vh;
+      padding:0vh 0 3vh 0
+    }
+    #about-section{
+      width:70vw;
+    }
+    #coffee{
+      height:22vh;
+    }
+    #about-paragraph{
+      padding: 3vh 0;
+    }
+  }
+  @media (max-width: 900px){
+    .about-main{
+      padding: 0 13vw;
+    }
+    .about-header{
+      flex-direction: column;
+      align-items: center;
+      padding: 6vh 0 2vh 0;
+      gap: 5vh;
+    }
+    .about-me-img{
+      width:60vw;
+      height:45vh;
+    }
     .about-paragraph{
-      padding:0 0;
+      max-width: 60vw;
+    }
+    #about-paragraph{
+      width:60vw;
+    }
+    #coffee{
+      height: 24vh;
     }
   }
   @media (max-width:768px){
@@ -72,5 +133,14 @@
     }
     #coffee{
       max-width:60vw;
+    }
+  }
+  @media (max-width: 430px){
+    .photo-section{
+      flex-direction: column;
+      gap:2vh;
+    }
+    #coffee{
+      height: 35vh;
     }
   }

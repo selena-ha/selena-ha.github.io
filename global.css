@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: #F8CF9F;
+  background-color: #fefbf8;
   padding: 3vh 4.5vw 0vh 6vw;
   display: flex;
   justify-content: space-between;
@@ -13,16 +13,16 @@ html{
   display: inline-block;
   text-decoration: none;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 500;
   color:black;
-  word-spacing: 2px;
+  word-spacing: 1px;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  font-family: ' Lato', sans-serif;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
   flex-direction: row;
   justify-content: space-between;
   height: 2vh;
@@ -34,8 +34,17 @@ html{
   text-decoration: none;
   color: rgb(57, 57, 57);
   padding: 0 1.5vw;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+.nav-item-on {
+  display: flex;
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+  padding: 0 1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
   margin: 0;
 }
 
@@ -43,17 +52,17 @@ html{
   text-decoration: none;
   color: rgb(57, 57, 57);
 }
-
-.logo img {
-  width: 175px;
-  vertical-align: middle;
+.logo:hover{
+  color: rgb(147, 147, 147) !important
 }
-
+.nav-item > a:hover {
+  color: rgb(147, 147, 147) !important
+}
 #navbar-burger {
   display: none;
   justify-content: space-between;
   align-items: center;
-  background-color: #F8CF9F;
+  background-color: #fefbf8;
   padding: 3vh 3vw;
 }
 
@@ -63,7 +72,7 @@ html{
   align-items: flex-end;
   gap: 1rem;
   margin: 0;
-  font-family: ' Lato', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 600;
   position: absolute;
   z-index: 1;
@@ -76,11 +85,11 @@ html{
 
 .fa {
   border-style: none;
-  background-color: #F8CF9F;
+  background-color: #fefbf8;
 }
 
 main-header {
-  background-color: #F8CF9F;
+  background-color: #fefbf8;
   padding: 250px;
 }
 
@@ -101,48 +110,92 @@ section {
 }
 
 .project-name {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
   margin: 0px;
-  font-weight: 800;
+  font-weight: 600;
+  padding-bottom: 2vh;
+}
+.card-button{
+  border: 1.5px #383736 solid;
+  border-radius: 8px;
+  padding: 15px;
+  width: 10vw;
+  text-align: center;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  color:black;
+  content: "";
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.card-button:hover {
+  color: rgb(255, 255, 255);
+  border-color: #e3b370;
+}
+
+.card-button:before {
+  content: "";
+  position: absolute;
+  background: #e3b370;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.card-button:hover:before {
+  top: 0;
 }
 
 
 h1 {
-  font-size: 65px;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: 800;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
   margin: 0;
 }
 
 h2 {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 48px;
   margin: 0;
+  font-weight: 600;
+
 }
 
 h3 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 33px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
   margin: 0px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   margin: 0px;
+  font-weight: 600;
 }
 
 h5 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   margin: 0px;
   font-weight: 600;
 }
 
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0px;
   font-weight: 600;
@@ -150,21 +203,28 @@ h6 {
 
 p {
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0px;
   line-height: 2.5vh;
 }
 
 .p1 {
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   margin: 0px;
 }
 
 .p2 {
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.p3 {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0px;
   letter-spacing: 1px;
@@ -224,7 +284,11 @@ footer {
     display: none !important;
   }
 }
-
+@media (max-width: 1400px){
+  .card-button{
+    width: 12vw;
+  }
+}
 
 @media (max-width: 1080px) {
   h3 {
@@ -241,11 +305,27 @@ footer {
 
   p {
     font-size: 17px;
+    line-height: 2vh;
   }
-
+  .project-name{
+    font-size: 40px;
+    padding-bottom: 0vh;
+  }
+  .card-button{
+    width: 15vw;
+    padding: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .p3{
+    font-size: 12px;
+  }
+  .card-button{
+    padding: 7px;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .p1 {
     font-size: 10px;
     font-weight: 600;
@@ -260,12 +340,16 @@ footer {
     font-size: 16px;
   }
 
-  .p2 {
-    font-size: 12px;
+  .p3 {
+    font-size: 10px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     margin: 0px;
     letter-spacing: 1px;
+  }
+  .card-button{
+    width: 22vw;
+    border: 1px #383736 solid;
   }
 }
 @media(max-width:500px){
@@ -276,6 +360,9 @@ footer {
   .footer-icons{
     gap:2vw;
     width:20vw;
+  }
+  .project-name{
+    font-size: 35px;
   }
 
 }
@@ -298,5 +385,14 @@ footer {
   }
   .logo{
     font-size: 16px;
+  }
+  .card-button{
+    width: 28vw;
+  }
+  .card{
+    height: 23vh;
+  }
+  .p2 {
+    font-size: 10px;
   }
 }
